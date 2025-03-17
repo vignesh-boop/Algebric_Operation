@@ -1,0 +1,60 @@
+package com.company;
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println("!...........TWO VALUE ALGEBRIC OPERATIONS...........!");
+        System.out.println("ENTER YOUR OPERATION");
+        System.out.println("ADDITION = 1");
+        System.out.println("SUBRACTION = 2");
+        System.out.println("MULTIPLICATION = 3");
+        System.out.println("DIVITION = 4");
+
+        float operator;
+        Scanner first = new Scanner(System.in);
+        operator = first.nextFloat();
+        System.out.println("YOU HAD CHOOSEN = "+operator);
+
+        double addition,addition2 ;
+        double subraction,subraction2;
+        double  multiplication,multiplication2;
+        double divition,divition2;
+
+        Scanner scan = new Scanner(System.in);
+
+        if (operator==1){
+
+            System.out.println("ENTER TWO VALUES VALUES");
+            addition = scan.nextDouble();
+            addition2 = scan.nextDouble();
+            double operation1 = (addition+addition2);
+            System.out.println("YOUR ANSWER IS = "+operation1);
+        }
+        if (operator==2){
+            System.out.println("ENTER TWO VALUES");
+            subraction = scan.nextDouble();
+            subraction2 = scan.nextDouble();
+            double operation2 = (subraction-subraction2);
+            System.out.println("YOUR ANSWER IS = "+operation2);
+        }
+        if(operator==3){
+            System.out.println("ENTER TWO VALUES");
+            multiplication = scan.nextDouble();
+            multiplication2 = scan.nextDouble();
+            double operation3 = (multiplication*multiplication2);
+            System.out.println("YOUR ANSWER IS = "+operation3);
+        }
+        if (operator==4) {
+            System.out.println("ENTER TWO VALUES");
+            divition = scan.nextDouble();
+            divition2 = scan.nextDouble();
+            double operation4 = (divition / divition2);
+            System.out.println("YOUR ANSWER IS = " + operation4);
+        }
+        if (operator>4) {
+            System.out.println("YOU HAS BEEN REQUESTED TO ENTER ABOVE GIVEN DATA FOR SPECFIC OPERATION..!");
+        }
+        System.out.println("THANKYOU...!");
+
+    }
+}
